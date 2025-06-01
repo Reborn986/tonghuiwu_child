@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:soundEffectsEnabled="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <!-- 弹窗卡片容器 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_layout"
+            android:layout_width="345dp"
+            android:layout_height="165dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="200dp"
+            app:cardBackgroundColor="#FFFFE3"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <!-- 按钮区域 -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- 播放按钮 -->
+                    <ImageButton
+                        android:id="@+id/iv_play_audio"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:soundEffectsEnabled="false"
+                        android:contentDescription="播放音频"
+                        android:src="@mipmap/guide_play"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <!-- 关闭按钮 -->
+                    <ImageButton
+                        android:id="@+id/iv_dialog_dismiss"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:soundEffectsEnabled="false"
+                        android:contentDescription="关闭指南"
+                        android:src="@mipmap/guide_cross"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- 引导文本 -->
+                <TextView
+                    android:id="@+id/tv_dialog_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingMultiplier="1.2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 箭头指示器 -->
+        <ImageView
+            android:id="@+id/iv_dialog_arrow"
+            android:layout_width="91dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/cv_layout"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/arrow_white"
+            app:layout_constraintStart_toStartOf="@id/cv_layout"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

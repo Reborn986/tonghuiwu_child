@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A7B4CE"
+    tools:context=".KnowledgeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/back_button"
+                android:src="@drawable/photoprocess_ic_back3"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="色  彩  知  识  库"
+                android:layout_marginTop="25dp"
+                android:textSize="20dp"
+                android:textColor="#677695"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/t1"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:text="传 统 颜 色"
+                android:background="@drawable/knowledge_bg_button2"
+                android:textColor="#677695"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/t2"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:text="配 色 知 识"
+                android:textColor="#677695"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/t3"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="服 饰 知 识"
+                android:textColor="#677695"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/t4"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:textSize="12dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="其 它"
+                android:textColor="#677695"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/knowledge_bg_re">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/rv_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:background="#A7B4CE"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/imbutton_seka"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_wodeseka2"
+                android:background="@android:color/transparent"
+                android:paddingTop="4dp"
+                android:paddingBottom="16dp"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/textbutton_seka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的色卡"
+                android:textColor="#677695"
+                android:textSize="11dp"
+                android:layout_marginBottom="1dp"
+                android:layout_gravity="bottom|center_horizontal"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/imbutton_home"
+                android:paddingTop="3dp"
+                android:paddingBottom="14dp"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_house2"
+                android:scaleType="fitCenter"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/textbutton_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主页"
+                android:textColor="#677695"
+                android:textSize="11dp"
+                android:layout_marginBottom="1dp"
+                android:layout_gravity="bottom|center_horizontal"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/imbutton_shequ"
+                android:paddingTop="3dp"
+                android:paddingBottom="14dp"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_shequ2"
+                android:scaleType="fitCenter"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/textbutton_shequ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="社区交流"
+                android:textColor="#677695"
+                android:textSize="11dp"
+                android:layout_marginBottom="1dp"
+                android:layout_gravity="bottom|center_horizontal"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

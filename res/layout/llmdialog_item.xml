@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LLMActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/person_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:elevation="2dp"
+        android:src="@drawable/touxiang2"
+        app:civ_border_color="@color/blue_bg"
+        app:civ_border_width="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/llm_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp"
+        android:src="@drawable/llm_image_xunfei"
+        app:civ_border_color="@color/blue_bg"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_time" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/llm_point_image"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/blue_point"
+        android:elevation="2dp"
+        app:civ_border_color="@color/yellow"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toEndOf="@+id/llm_image"
+        app:layout_constraintTop_toTopOf="@+id/llm_image" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/person_point_image"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/green_point"
+        android:elevation="2dp"
+        app:civ_border_color="@color/yellow"
+        app:civ_border_width="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/person_image"
+        app:layout_constraintTop_toTopOf="@+id/person_image" />
+
+    <TextView
+        android:id="@+id/llm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000-00-00 00:00:00"
+        android:textSize="10sp"
+        android:textColor="@color/blue_bg"
+        app:layout_constraintStart_toStartOf="@+id/llm_text"
+        app:layout_constraintTop_toBottomOf="@+id/llm_text" />
+    <TextView
+        android:id="@+id/person_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000-00-00 00:00:00"
+        android:textSize="10sp"
+        android:textColor="@color/blue_bg"
+        app:layout_constraintEnd_toEndOf="@+id/person_text"
+        app:layout_constraintTop_toBottomOf="@+id/person_text" />
+
+    <TextView
+        android:id="@+id/llm_text"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/blue_circular"
+        android:text="TextView"
+        android:padding="10dp"
+        android:textColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toEndOf="@+id/llm_point_image"
+        app:layout_constraintTop_toTopOf="@+id/llm_image" />
+
+    <TextView
+        android:id="@+id/person_text"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/green_circular"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="@color/yellow2"
+        app:layout_constraintEnd_toStartOf="@+id/person_point_image"
+        app:layout_constraintTop_toTopOf="@+id/person_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

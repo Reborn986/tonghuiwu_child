@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"> <!-- 形状为矩形 -->
+
+    <!-- 填充颜色：白色 -->
+    <solid android:color="#FFFFE3" />
+
+    <!-- 边框颜色：红色，宽度 2dp -->
+    <stroke
+        android:width="5dp"
+        android:color="#DAA9A8" />
+    <corners android:radius="10dp" />
+    <!-- 尺寸：正方形宽高（可选，或在布局中设置） -->
+    <size
+        android:width="120dp"
+        android:height="120dp" />
+</shape>

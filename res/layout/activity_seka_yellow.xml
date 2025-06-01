@@ -1,0 +1,900 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blue_li"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F4EB">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#502F21"
+        android:id="@+id/toolbar_photo"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:title="@null">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00FAFBED"
+            android:id="@+id/imb_back"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:fontFamily="@font/hanyixuejun"
+            android:text="中国传统颜色"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/ic_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="#00FBF8B1"
+            android:src="@drawable/ic_more2"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY">
+
+        </ImageButton>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/yellow_im"
+            android:layout_width="125dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="200dp"/>
+        <LinearLayout
+            android:id="@+id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_dianjiseka" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="竹外桃花三两枝,\n春江水暖鸭先知"
+                android:textSize="20dp"
+                android:lineSpacingExtra="10dp"
+                android:id="@+id/t_shiju"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/hanyixuejun"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/table_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/button_dantuhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_dantuhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_jinhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_jinhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_beiguahuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_beiguahuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_jiehuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_jiehuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_danjucheng"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_danjvcheng" />
+
+                    <ImageButton
+                        android:id="@+id/button_zhizihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_zhizihuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_haohuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_haohuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_qianlaohuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_qianlaohuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_gancaohuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_gancaohuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_tenghuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_tenghuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_foshouhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_foshouhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_chaomihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_chaomihuang" />
+                    <ImageButton
+                        android:id="@+id/button_molihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_molihuang" />
+                    <ImageButton
+                        android:id="@+id/button_danrouse"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_danrouse" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/button_laiyanglihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_laiyanglihuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_jinlianhuacheng"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_jinlianhuacheng" />
+
+                    <ImageButton
+                        android:id="@+id/button_zuiguarou"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_zuiguarou" />
+
+                    <ImageButton
+                        android:id="@+id/button_shashihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_shashihuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_jinyinghuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_jinyinghuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_guhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_guhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_hupohuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_hupohuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_jinzhanhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_jinzhanhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_huanglianhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_huanglianhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_jinguahuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_jinguahuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_diehuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_diehuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_maiyatanghuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_maiyatanghuang" />
+                    <ImageButton
+                        android:id="@+id/button_yaohuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_yaohuang" />
+                    <ImageButton
+                        android:id="@+id/button_xingrenhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_xingrenhuang" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/button_canghuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_canghuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_shanjihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_shanjihuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_fengfanhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_fengfanhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_ruanmuhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_ruanmuhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_jinyehuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_jinyehuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_hupihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_hupihuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_ezhanghuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_ezhanghuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_youhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_youhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_mihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_mihuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_qiukuihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_qiukuihuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_meiguifen"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_meiguifen" />
+
+                    <ImageButton
+                        android:id="@+id/button_kuishanhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_kuishanhuang" />
+                    <ImageButton
+                        android:id="@+id/button_xiangyahuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_xiangyahuang" />
+                    <ImageButton
+                    android:id="@+id/button_mise"
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/lightyellow"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/yellow_mise" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/button_guibeihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_guibeihuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_jucheng"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_jvcheng" />
+
+                    <ImageButton
+                        android:id="@+id/button_xinghuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_xinghuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_daimaohuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_daimaohuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_hailuocheng"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_hailuocheng" />
+
+                    <ImageButton
+                        android:id="@+id/button_jianghuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_jianghuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_jidanhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_jidanhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_ruyahuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_ruyahuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_yalihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_yalihuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_dadouhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_dadouhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_youcaihuahuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_youcaihuahuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_danmihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_danmihuang" />
+                    <ImageButton
+                        android:id="@+id/button_xiangshuimeigui"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_xiangshuimeigui" />
+                    <ImageButton
+                        android:id="@+id/button_douzhihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_douzhihuang" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/button_meirenjiaocheng"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_meirenjiaocheng" />
+
+                    <ImageButton
+                        android:id="@+id/button_xionghuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_xionghuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_chengpihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_chengpihuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_liuehuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_liuehuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_xiangjiaohuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_xiangjiaohuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_chushuxinghuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_chushuxinghuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_xiangrikuihuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_xiangrikuihuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_suxinhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_suxinhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_ningmenghuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_ningmenghuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_rouse"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_rouse" />
+
+                    <ImageButton
+                        android:id="@+id/button_danjianhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_danjianhuang" />
+                    <ImageButton
+                        android:id="@+id/button_miehuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_miehuang" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/button_jintuo"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_jintuo" />
+
+                    <ImageButton
+                        android:id="@+id/button_wanshoujuhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_wanshoujiuhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_tuhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_tuhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_pipahuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_pipahuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_caohuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_caohuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_youhuang_2"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_youhuang_2" />
+
+                    <ImageButton
+                        android:id="@+id/button_muguahuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_muguahuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_yingwuhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_yingwuguanhuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_liuhuahuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_liuhuahuang" />
+
+                    <ImageButton
+                        android:id="@+id/button_mangguohuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_mangguohuang" />
+                    <ImageButton
+                        android:id="@+id/button_dankehuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_dankehuang" />
+                    <ImageButton
+                        android:id="@+id/button_maiganhuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_maiganhuang" />
+                    <ImageButton
+                        android:id="@+id/button_laohuang"
+                        android:layout_width="50dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/lightyellow"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/yellow_laohuang" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+
+ </LinearLayout>
+
+

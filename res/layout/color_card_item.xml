@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    android:id="@+id/blue_cardview"
+    app:cardCornerRadius="2dp"
+    android:layout_width="79dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="#00FAFBED"
+    android:layout_height="200dp"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/color_card_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ffffff"
+        />
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg_all"
+    android:id="@+id/linear_layout">
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/background_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/pink"/>
+
+            <ImageView
+                android:id="@+id/background_imageview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/title_im_title" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_color="@color/yellow"
+                app:civ_border_width="1dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/opendrawer_image"
+                android:src="@drawable/touxiang2"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_username"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:letterSpacing="0.4"
+                    android:text="你好！xx"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="A r t  C h a n g e  L i f e"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/main_bg_cambutton"
+            android:elevation="5dp"
+            android:src="@drawable/ic_mic"
+            android:onClick="Recognition"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="20dp"
+            android:id="@+id/button_micro2"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="micro_button" />
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <FrameLayout
+            android:id="@+id/frame3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:id="@+id/bottom_im"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/main_im_bottom"
+                android:scaleType="fitXY"/>
+
+            <EditText
+                android:id="@+id/edit_micro"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/yellow_circular"
+                android:paddingLeft="15dp"
+                android:text="按住话筒按钮，识别语音"
+                android:textColor="#3E855555"
+
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="2.2" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/my_color_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_bg_sekabutton"
+                android:text="进 入 系 统 色 卡"
+                android:textColor="@color/deeperpink"
+                android:textSize="13dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/love_color_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/main_bg_sekabutton"
+        android:text="进 入 我 的 色 卡"
+        android:textColor="@color/deeperpink"
+        android:textSize="13dp" />
+</LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_button_groupTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/tianse_button"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/main_bg_button"
+                            android:elevation="3dp"
+                            android:padding="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_im_tianse" />
+
+                        <ImageButton
+                            android:id="@+id/pingtu_button"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/main_bg_button2"
+                            android:elevation="3dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="8dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_im_pingtu" />
+
+                        <ImageButton
+                            android:id="@+id/micro_button"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/main_bg_button"
+                            android:elevation="3dp"
+                            android:paddingLeft="13dp"
+                            android:paddingTop="15dp"
+                            android:paddingRight="12dp"
+                            android:paddingBottom="7dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_ic_yuyin" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_button_centerBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/AIhuihua_button"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/main_bg_button2"
+                            android:elevation="3dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_im_ai" />
+
+                        <ImageButton
+                            android:id="@+id/paizhao_button"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/main_bg_button"
+                            android:elevation="3dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:scaleType="fitXY"
+
+                            android:src="@drawable/main_im_paizhao" />
+
+                        <ImageButton
+                            android:id="@+id/yinyueganse_button"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/main_bg_button2"
+                            android:elevation="3dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_yinyueganse" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_button_groupBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/zhishi_button"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/main_bg_button"
+                            android:elevation="3dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_im_zhishi" />
+
+                        <ImageButton
+                            android:id="@+id/shequ_button"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/main_bg_button2"
+                            android:elevation="3dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_im_shequ" />
+
+                        <ImageButton
+                            android:id="@+id/zhuti_button"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/main_bg_button"
+                            android:elevation="3dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/main_im_zhuti" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_micro"
+            android:background="@android:color/transparent"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_mic"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="12dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="bottom|end" />
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 暂停状态时显示暂停图标 -->
+    <item android:drawable="@drawable/pause"
+          android:state_selected="true"
+          android:state_pressed="false"/>
+    <!-- 默认状态（播放）显示播放图标 -->
+    <item android:drawable="@drawable/bofang1"
+          android:state_selected="false"/>
+</selector>
